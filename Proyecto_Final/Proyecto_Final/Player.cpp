@@ -1,6 +1,9 @@
 #include "Player.h"
 
+Player::Player() 
+{
 
+}
 
 Player::Player(vector<string>& Inventory, string Location)
 {
