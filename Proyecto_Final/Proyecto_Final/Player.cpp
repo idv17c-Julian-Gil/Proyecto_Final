@@ -5,10 +5,11 @@ Player::Player()
 
 }
 
-Player::Player(vector<string>& Inventory, string Location)
+Player::Player(vector<string>& Inventory, string Location, bool Ganar)
 {
 	m_Inventory = Inventory;
 	m_Location = Location;
+	m_Ganar = Ganar;
 }
 
 void Player::Show_Location()
@@ -26,19 +27,36 @@ void Player::Show_Location()
 
 void Player::Show_Inventory()
 {
-	string Mensaje = "Traes contigo: ";
-	int x = 0;
-	while (Mensaje[x] != '\0')
+	if (m_Inventory.size() != 0)
 	{
-		cout << Mensaje[x];
-		Sleep(80);
-		x++;
+		string Mensaje = "Traes contigo: ";
+		int x = 0;
+		while (Mensaje[x] != '\0')
+		{
+			cout << Mensaje[x];
+			Sleep(80);
+			x++;
+		}
+		for (int i = 0; i < m_Inventory.size(); i++)
+			
+			cout << m_Inventory[i] + " ";
+		cout << '\n' << endl;
 	}
-	for (int i = 0; i < m_Inventory.size(); i++)
-		
-		cout << m_Inventory[i] + " ";
+	else
+	{
+		string Mensaje = "No traes nada contigo por el momento";
+		int x = 0;
+		while (Mensaje[x] != '\0')
+		{
+			cout << Mensaje[x];
+			Sleep(80);
+			x++;
+		}
+		cout << '\n' << endl;
+	}
 }
 
 Player::~Player()
 {
+
 }

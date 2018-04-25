@@ -1,0 +1,46 @@
+Calle lado este
+1
+
+Kiosko
+0
+Revolver
+
+Parque entrada norte
+1
+Telefono inteligente
+
+Parque entrada oeste
+1
+Una bala
+
+Parque entrada sur
+1
+Palanca
+
+Parque entrada este
+1
+
+Calle interseccion norte con oeste
+1
+Palanca
+
+Calle lado sur
+1
+Cuerpo de llave
+
+Parque entrada oeste
+0
+
+Calle interseccion sur con oeste
+1
+
+Calle lado norte
+1
+Cabeza de llave
+
+Calle interseccion norte con este
+1
+
+Calle interseccion sur con este
+1
+
